@@ -43,7 +43,7 @@ alias yd='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w" -o "~/Vide
 alias yda='yt-dlp -f "ba" -o "~/Music/%(title)s.%(ext)s"'
 # alias ls="ls --color=auto"
 alias la="ls -la --color=auto"
-alias zrc="nvim ~/.zshrc"
+alias zrc="nvim ~/.config/zsh/.zshrc"
 alias tn="nvim ~/Documents/notes.md"
 alias grep="grep --color=auto"
 alias diff="diff --color"

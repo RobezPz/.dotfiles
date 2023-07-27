@@ -17,15 +17,15 @@ set shellopts '-eu'
 # commands accordingly.
 set ifs "\n"
 
+#sort by newest date first
+set reverse! true
+set sortby ctime
 # leave some space at the top and the bottom of the screen
 set scrolloff 8
 set hidden true
 set ignorecase true
 set icons true
-set globsearch true
-set incsearch true
 set smartcase true
-set sortby natural
 set previewer ~/.config/lf/scripts/lfpreviewer
 set cleaner ~/.config/lf/scripts/lfcleaner
 set preview
@@ -33,6 +33,9 @@ set preview
 map gv cd ~/Videos/
 map g7 cd ~/Documents/7he/
 map gc cd ~/.config/
+map gl cd ~/Documents/7he/lavellee/
+map gd cd ~/Downloads/
+
 # use enter for shell commands
 map <enter> shell
 

@@ -34,6 +34,7 @@ map gv cd ~/Videos/
 map g7 cd ~/Documents/7he/
 map gc cd ~/.config/
 map gl cd ~/Documents/7he/lavellee/
+map gm cd ~/Documents/7he/Morris/
 map gd cd ~/Downloads/
 
 # use enter for shell commands

@@ -17,10 +17,6 @@ set shellopts '-eu'
 # commands accordingly.
 set ifs "\n"
 
-#sort files with newest first
-set reverse! true
-set sortby ctime
-
 #sort by newest date first
 set reverse! true
 set sortby ctime

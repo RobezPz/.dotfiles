@@ -52,6 +52,7 @@ alias gtd="cd /usr/share/doc"
 alias ls="exa -la --icons"
 alias e="lfcd"
 alias nsxiv="nsxiv -f"
+alias fd="fdfind --no-ignore-vcs"
 
 # lf file manager
 # source $HOME/.config/lf/lfcd.sh

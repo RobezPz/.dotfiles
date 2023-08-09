@@ -1,6 +1,6 @@
+set ratios 1:2:3
 # interpreter for shell commands
 set shell zsh
-
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
 # exit on error and option '-u' is used to give error for unset variables.
@@ -17,15 +17,16 @@ set shellopts '-eu'
 # commands accordingly.
 set ifs "\n"
 
+#sort files with newest first
+set reverse! true
+set sortby ctime
+
 # leave some space at the top and the bottom of the screen
-set scrolloff 8
+set scrolloff 2
 set hidden true
-set ignorecase true
 set icons true
-set globsearch true
-set incsearch true
+set ignorecase true
 set smartcase true
-set sortby natural
 set previewer ~/.config/lf/scripts/lfpreviewer
 set cleaner ~/.config/lf/scripts/lfcleaner
 set preview
@@ -34,7 +35,7 @@ map gv cd ~/Videos/
 map g7 cd ~/Documents/7he/
 map gc cd ~/.config/
 # use enter for shell commands
-map <enter> shell
+# map <enter> shell
 
 # execute current file (must be executable)
 map x $$f
@@ -43,6 +44,7 @@ map X !$f
 # dedicated keys for file opener actions
 map o &mimeopen $f
 map O $mimeopen --ask $f
+map <enter> &mimeopen $f
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to

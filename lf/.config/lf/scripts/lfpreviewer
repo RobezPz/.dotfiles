@@ -162,7 +162,12 @@ image()
     [ -n "$w" ] || [ -n "$h" ] || exit 1
 
     if [ -z "$DISPLAY" ] || [ ! -p "$FIFO" ]; then
+<<<<<<< HEAD
         run chafa -s ${w}x${h} -w 8 "$img"
+=======
+        run chafa -s ${w}x${h} "$img"
+        # run exiftool "$img"
+>>>>>>> c3093759900c92a4df646bb78aa7a0a957767064
         return
     fi
 

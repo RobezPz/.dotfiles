@@ -37,7 +37,7 @@ map gc cd ~/.config/
 map gl cd ~/Documents/7he/lavellee/
 map gm cd ~/Documents/7he/Morris/
 map gd cd ~/Downloads/
-man gh cd /usr/share/doc
+map gh cd /usr/share/doc
 
 # use enter for shell commands
 # map <enter> shell

@@ -37,6 +37,7 @@ map gc cd ~/.config/
 map gl cd ~/Documents/7he/lavellee/
 map gm cd ~/Documents/7he/Morris/
 map gd cd ~/Downloads/
+man gh cd /usr/share/doc
 
 # use enter for shell commands
 # map <enter> shell
@@ -68,7 +69,7 @@ map r push :rename<space>
 
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
+cmd trash %set -f; mv $fx ~/.local/share/Trash/files/
 
 cmd new_f %[ $1 ] || touch $1
 map n push :new_f<space>

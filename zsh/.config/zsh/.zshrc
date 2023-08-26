@@ -39,8 +39,9 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #aliases
 alias sba="source bin/activate"
-alias yd='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w" -o "~/Videos/%(title)s.%(ext)s"'
-alias yda='yt-dlp -f "ba" -o "~/Music/%(title)s.%(ext)s"'
+alias yd="yt-dlp"
+# alias yd='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w" -o "~/Videos/%(title)s.%(ext)s"'
+# alias yda='yt-dlp -f "ba" -o "~/Music/%(title)s.%(ext)s"'
 # alias ls="ls --color=auto"
 alias la="ls -la --color=auto"
 alias zrc="nvim ~/.config/zsh/.zshrc"

@@ -1,12 +1,15 @@
 # Save all videos under YouTube directory in your home directory
-# -o ~/Videos/%(title)s.%(ext)s
+-o ~/Videos/%(title)s.%(ext)s
 
 #select best format 1080p or less
-# -f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w"
+-f "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w"
 
 #Block commercials
 --sponsorblock-mark all
 --sponsorblock-remove sponsor
+
+#Go fast
+--downloader aria2c
 
 #General options
 

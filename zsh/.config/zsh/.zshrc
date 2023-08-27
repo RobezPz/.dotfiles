@@ -55,6 +55,16 @@ alias e="lfcd"
 alias nsxiv="nsxiv -f"
 alias fd="fdfind --no-ignore-vcs"
 
+fcd(){
+  cd "$(find -type d | fzf)"
+}
+open(){
+  xdg-open "$(find -type f | fzf)"
+}
+gpath() {
+  echo $PWD| tr -d '\n' && echo "$(find -type f | fzf | sed 's/^.//g')"
+}
+
 # lf file manager
 # source $HOME/.config/lf/lfcd.sh
 bindkey -s '^o' 'lfcd\n'  # zsh
